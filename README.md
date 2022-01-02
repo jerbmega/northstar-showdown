@@ -1,0 +1,2 @@
+# Showdown
+Based on the gamemode of the same name from Splitgate, Showdown is a permadeath, team-based gamemode where every player is given the same randomly generated loadout, including ordnances and tacticals, every round. Much like Gun Game tests player proficiency with weapons, and their ability to adjust to different weapons on the fly, Showdown simultaneously tests the players' ability to identify, utilize, and counter a new loadout.

@@ -1,0 +1,34 @@
+{
+	"Name" : "Showdown",
+	"Description": "Adds Showdown as a new gamemode",
+	"Version": "1.0.0",
+	"LoadPriority": 1,
+	"RequiredOnClient": true,
+
+	"Scripts": [
+		// showdown
+		{
+			"Path": "gamemodes/sh_gamemode_showdown.nut",
+			"RunOn": "( CLIENT || SERVER ) && MP",
+			"ClientCallback": {
+				"Before": "Sh_GamemodeShowdown_Init"
+			},
+
+			"ServerCallback": {
+				"Before": "Sh_GamemodeShowdown_Init"
+			}
+		},
+		{
+			"Path": "gamemodes/_gamemode_showdown.nut",
+			"RunOn": "SERVER && MP"
+		},
+        {
+			"Path": "gamemodes/cl_gamemode_showdown.nut",
+			"RunOn": "CLIENT && MP"
+		},
+	],
+
+	"Localisation": [
+		"resource/showdown_custom_%language%.txt"
+	]
+}

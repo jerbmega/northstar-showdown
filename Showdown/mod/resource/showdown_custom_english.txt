@@ -1,0 +1,12 @@
+"lang"
+{
+	"Language" "english"
+	"Tokens"
+	{
+		"PL_showdown" "Showdown"
+		"PL_showdown_lobby" "Showdown Lobby"
+		"PL_showdown_desc" "Permadeath. Loadouts are randomized every round."
+		"PL_showdown_abbr" "SD"
+		"GAMEMODE_SHOWDOWN" "Showdown"
+	}
+}
