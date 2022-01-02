@@ -24,11 +24,19 @@ void function GamemodeShowdown_Init()
 	AddCallback_OnClientConnected( ShowdownInitPlayer )
 	AddCallback_GameStateEnter( eGameState.Prematch, ShuffleWeapons )
 	AddCallback_OnPlayerRespawned( UpdateLoadout )
+	AddCallback_OnPlayerKilled( UpdateScore )
 }
 
 void function ShowdownInitPlayer( entity player )
 {
 	UpdateLoadout(player)
+}
+
+void function UpdateScore(entity victim, entity attacker, var damageInfo)
+{
+	if(GetPlayerArray().len() <= 2 && attacker.GetTeam() != victim.GetTeam()) {
+		attacker.SetPlayerGameStat( PGS_ASSAULT_SCORE, attacker.GetPlayerGameStat( PGS_ASSAULT_SCORE ) + 1)
+	}
 }
 
 void function ShuffleWeapons()
