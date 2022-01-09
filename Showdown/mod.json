@@ -1,7 +1,7 @@
 {
 	"Name" : "Showdown",
 	"Description": "Adds Showdown as a new gamemode",
-	"Version": "1.0.0",
+	"Version": "1.1.0",
 	"LoadPriority": 1,
 	"RequiredOnClient": true,
 
